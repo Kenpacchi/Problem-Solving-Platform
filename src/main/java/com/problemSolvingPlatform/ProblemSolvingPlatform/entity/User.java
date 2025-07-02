@@ -1,4 +1,4 @@
-package com.problemSolvingPlatform.Problem.Solving.Platform.entity;
+package com.problemSolvingPlatform.ProblemSolvingPlatform.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -9,7 +9,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="Users")
+@Table(name="PsUsers")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

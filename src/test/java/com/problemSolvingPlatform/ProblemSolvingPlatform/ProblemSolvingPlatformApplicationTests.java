@@ -1,4 +1,4 @@
-package com.problemSolvingPlatform.Problem.Solving.Platform;
+package com.problemSolvingPlatform.ProblemSolvingPlatform;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

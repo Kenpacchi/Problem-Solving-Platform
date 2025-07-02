@@ -1,4 +1,4 @@
-package com.problemSolvingPlatform.Problem.Solving.Platform.entity;
+package com.problemSolvingPlatform.ProblemSolvingPlatform.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -7,6 +7,7 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name="contestUser")
 public class ContestUser {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

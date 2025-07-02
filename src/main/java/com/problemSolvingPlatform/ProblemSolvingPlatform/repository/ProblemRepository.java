@@ -1,6 +1,6 @@
-package com.problemSolvingPlatform.Problem.Solving.Platform.repository;
+package com.problemSolvingPlatform.ProblemSolvingPlatform.repository;
 
-import com.problemSolvingPlatform.Problem.Solving.Platform.entity.Problem;
+import com.problemSolvingPlatform.ProblemSolvingPlatform.entity.Problem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

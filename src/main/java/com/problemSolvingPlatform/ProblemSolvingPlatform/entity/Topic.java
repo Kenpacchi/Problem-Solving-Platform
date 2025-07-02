@@ -1,4 +1,4 @@
-package com.problemSolvingPlatform.Problem.Solving.Platform.entity;
+package com.problemSolvingPlatform.ProblemSolvingPlatform.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

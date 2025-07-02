@@ -1,4 +1,4 @@
-package com.problemSolvingPlatform.Problem.Solving.Platform;
+package com.problemSolvingPlatform.ProblemSolvingPlatform;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

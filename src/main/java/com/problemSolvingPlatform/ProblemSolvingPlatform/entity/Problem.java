@@ -1,4 +1,4 @@
-package com.problemSolvingPlatform.Problem.Solving.Platform.entity;
+package com.problemSolvingPlatform.ProblemSolvingPlatform.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -11,6 +11,7 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name="problem")
 public class Problem {
 
     @Id
