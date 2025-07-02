@@ -1,11 +1,17 @@
 package com.problemSolvingPlatform.ProblemSolvingPlatform.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
 
 @Entity
 @Table(name="contest")
+@Data
+@Getter
+@Setter
 public class Contest {
 
     @Id
@@ -22,4 +28,6 @@ public class Contest {
     public boolean isAttempted() {
         return false;
     }
+
+
 }

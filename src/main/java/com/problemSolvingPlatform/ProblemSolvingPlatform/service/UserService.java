@@ -49,6 +49,6 @@ public class UserService {
         return loginUser(user);
     }
     private List<Problem> getProblemsByeTopicName(String name){
-        return topicRepository.findByName(name).getTopicProblems();
+        return topicRepository.findByTopicName(name).getTopicProblems();
     }
 }

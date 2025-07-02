@@ -7,6 +7,8 @@ import lombok.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @Table(name="contestUser")
 public class ContestUser {
     @Id
@@ -19,4 +21,6 @@ public class ContestUser {
     private long solvedProblem;
 
     private long timeTaken;
+
+
 }

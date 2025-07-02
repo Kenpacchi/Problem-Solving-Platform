@@ -12,4 +12,5 @@ public interface ProblemRepository extends JpaRepository<Problem,Long> {
     @Query("SELECT p FROM Problem p WHERE p.level = :difficulty")
     List<Problem> findByDifficulty(@Param("difficulty") String difficulty);
 
+    List<Problem> findByIsSolvedFalse();
 }

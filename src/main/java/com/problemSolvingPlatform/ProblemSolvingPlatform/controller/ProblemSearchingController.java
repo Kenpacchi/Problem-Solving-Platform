@@ -1,13 +1,11 @@
 package com.problemSolvingPlatform.ProblemSolvingPlatform.controller;
 
 import com.problemSolvingPlatform.ProblemSolvingPlatform.entity.Problem;
+import com.problemSolvingPlatform.ProblemSolvingPlatform.entity.User;
 import com.problemSolvingPlatform.ProblemSolvingPlatform.service.ProblemSearchingService;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -30,6 +28,16 @@ public class ProblemSearchingController {
     @GetMapping("/getProblemByDifficulty/{Difficulty}")
     public List<Problem> getProblemByDifficulty(@PathVariable String difficulty){
         return problemSearchingService.getProblemsByDifficulty(difficulty);
+    }
+
+    @PostMapping("/unsolved")
+    public List<Problem> getUnsolvedProblems(@RequestBody User user) {
+        return problemSearchingService.getUnsolvedProblems(user);
+    }
+
+    @PostMapping("/by-difficulty")
+    public List<Problem> getProblemsByDifficulty(@RequestParam String level) {
+        return problemSearchingService.getProblemsByDifficulty(level);
     }
 
 };
