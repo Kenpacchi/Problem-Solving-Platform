@@ -25,15 +25,13 @@ public class UserService {
     @Autowired
     private TopicRepository topicRepository;
     @Autowired
-    private AllProblemsRepository allProblemsRepository;
-    @Autowired
     private ProblemRepository problemRepository;
     @Autowired
     private ContestRepository contestRepository;
 
 
     private Long failedCounter=0L;
-    private void checkCredentials(User user){
+    public void checkCredentials(User user){
         String phoneNumber=user.getPhoneNumber();
         User user1=userRepository.findByPhoneNumber(phoneNumber);
         if(user1==null){
