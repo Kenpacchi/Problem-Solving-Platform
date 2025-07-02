@@ -35,8 +35,8 @@ public class ProblemSearchingController {
         return problemSearchingService.getUnsolvedProblems(user);
     }
 
-    @PostMapping("/by-difficulty")
-    public List<Problem> getProblemsByDifficulty(@RequestParam String level) {
+    @GetMapping("/by-difficulty")
+    public List<Problem> getProblemsByDifficultyQuery(@RequestParam String level) {
         return problemSearchingService.getProblemsByDifficulty(level);
     }
 
