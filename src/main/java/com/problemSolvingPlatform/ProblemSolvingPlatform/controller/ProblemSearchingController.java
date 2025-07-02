@@ -22,12 +22,12 @@ public class ProblemSearchingController {
     @Autowired
     private ProblemSearchingService problemSearchingService;
 
-    @GetMapping("/getProblemByTopicName")
+    @GetMapping("/getProblemByTopicName/{name}")
     public List<Problem> getProblemByTopicName(@PathVariable String name){
         return problemSearchingService.getProblemByTopicName(name);
     }
 
-    @GetMapping("/getProblemByDifficulty")
+    @GetMapping("/getProblemByDifficulty/{Difficulty}")
     public List<Problem> getProblemByDifficulty(@PathVariable String difficulty){
         return problemSearchingService.getProblemsByDifficulty(difficulty);
     }
