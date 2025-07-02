@@ -1,7 +1,7 @@
 package com.problemSolvingPlatform.ProblemSolvingPlatform.controller;
 
 import com.problemSolvingPlatform.ProblemSolvingPlatform.entity.Problem;
-import com.problemSolvingPlatform.ProblemSolvingPlatform.service.ProblemService;
+import com.problemSolvingPlatform.ProblemSolvingPlatform.service.ProblemSearchingService;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,18 +18,18 @@ import java.util.List;
 @Getter
 @Setter
 @RequestMapping("/leetApi/prob")
-public class ProblemController {
+public class ProblemSearchingController {
     @Autowired
-    private ProblemService problemService;
+    private ProblemSearchingService problemSearchingService;
 
     @GetMapping("/getProblemByTopicName")
     public List<Problem> getProblemByTopicName(@PathVariable String name){
-        return problemService.getProblemByTopicName(name);
+        return problemSearchingService.getProblemByTopicName(name);
     }
 
     @GetMapping("/getProblemByDifficulty")
     public List<Problem> getProblemByDifficulty(@PathVariable String difficulty){
-        return problemService.getProblemsByDifficulty(difficulty);
+        return problemSearchingService.getProblemsByDifficulty(difficulty);
     }
 
 };
