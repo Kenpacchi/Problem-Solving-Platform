@@ -10,11 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-@Getter
-@Setter
 @RequestMapping("/leetApi/prob")
 public class ProblemSearchingController {
     @Autowired

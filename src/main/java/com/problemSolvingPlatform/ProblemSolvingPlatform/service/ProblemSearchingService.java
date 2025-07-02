@@ -27,7 +27,7 @@ public class ProblemSearchingService {
     private TopicRepository topicRepository;
 
     @Autowired
-    ContestRepository contestRepository;
+    private ContestRepository contestRepository;
 
     public List<Problem> getProblemByTopicName(String name){
        return topicRepository.findByTopicName(name).getTopicProblems();
